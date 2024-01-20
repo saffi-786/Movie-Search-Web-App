@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
 import ResultBox from "./Components/ResultBox";
 
+// const APIURL =
+//   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.dec&api_key=be7bcc5cb49419b7221cb74ba34581f2&page=1";
+
 const APIURL =
-  "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.dec&api_key=be7bcc5cb49419b7221cb74ba34581f2&page=1";
+  "https://api.themoviedb.org/3/movie/popular?api_key=be7bcc5cb49419b7221cb74ba34581f2";
 const SEARCHAPI =
   "https://api.themoviedb.org/3/search/movie?&api_key=be7bcc5cb49419b7221cb74ba34581f2&query=";
 
@@ -47,7 +50,7 @@ function App() {
           type="search"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="w-full rounded-full py-3 px-5 text-slate-700 shadow-md font-serif"
+          className="w-full rounded-full py-3 px-5 text-slate-700 shadow-md font-serif mb-3"
         />
       </div>
       <div className="w-full flex flex-wrap gap-4">
