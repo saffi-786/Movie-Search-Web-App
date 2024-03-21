@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ResultBox from "./Components/ResultBox";
+import Logo from "./Components/Logo";
 
 // const APIURL =
 //   "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.dec&api_key=be7bcc5cb49419b7221cb74ba34581f2&page=1";
@@ -36,14 +37,7 @@ function App() {
 
   return (
     <div className="max-w-[1200px] min-h-[400px] shadow-xl mx-auto mt-5 p-3 rounded-lg">
-      <div className="text-center">
-        <h1 className="font-bold text-4xl text-yellow-500">
-          Movies
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-violet-500">
-            FLIX
-          </span>
-        </h1>
-      </div>
+      <Logo />
       <div>
         <input
           placeholder="Search"
